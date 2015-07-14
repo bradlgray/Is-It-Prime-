@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Is_It_Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfb-AB-kFs">
+                                <rect key="frame" x="251" y="52" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="K9Z-lW-79s"/>
+                                    <constraint firstAttribute="height" constant="21" id="dWd-Bg-hD8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the Box" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYi-WD-gYa">
+                                <rect key="frame" x="200" y="102" width="201" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UsO-k7-l1O"/>
+                                    <constraint firstAttribute="width" constant="201" id="ZAO-Tz-xQt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="23a-PI-m4W">
+                                <rect key="frame" x="252" y="182" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qY2-hu-htx"/>
+                                    <constraint firstAttribute="width" constant="97" id="yQT-HO-bCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGK-WB-bWG">
+                                <rect key="frame" x="262" y="256" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="E39-sA-bWa"/>
+                                    <constraint firstAttribute="height" constant="30" id="wnt-7b-RLw"/>
+                                </constraints>
+                                <state key="normal" title="Is it Prime?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CheckPrime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUj-Jp-jhr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-uz-ezD">
+                                <rect key="frame" x="218" y="353" width="164" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5fQ-Do-AvL"/>
+                                    <constraint firstAttribute="width" constant="164" id="FLo-7R-FVs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="23a-PI-m4W" secondAttribute="centerX" id="46m-0e-MT7"/>
+                            <constraint firstItem="MGK-WB-bWG" firstAttribute="top" secondItem="23a-PI-m4W" secondAttribute="bottom" constant="44" id="FUB-6X-C3L"/>
+                            <constraint firstAttribute="centerX" secondItem="WEx-uz-ezD" secondAttribute="centerX" id="H8w-la-gIf"/>
+                            <constraint firstItem="xfb-AB-kFs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="HR1-i6-6Yr"/>
+                            <constraint firstItem="KYi-WD-gYa" firstAttribute="top" secondItem="xfb-AB-kFs" secondAttribute="bottom" constant="29" id="K2a-Nh-A95"/>
+                            <constraint firstAttribute="centerX" secondItem="xfb-AB-kFs" secondAttribute="centerX" id="K32-P7-Eti"/>
+                            <constraint firstItem="WEx-uz-ezD" firstAttribute="top" secondItem="MGK-WB-bWG" secondAttribute="bottom" constant="67" id="KB7-cC-7js"/>
+                            <constraint firstAttribute="centerX" secondItem="KYi-WD-gYa" secondAttribute="centerX" id="Wss-vF-d8t"/>
+                            <constraint firstItem="23a-PI-m4W" firstAttribute="top" secondItem="KYi-WD-gYa" secondAttribute="bottom" constant="59" id="YVS-QO-4cg"/>
+                            <constraint firstAttribute="centerX" secondItem="MGK-WB-bWG" secondAttribute="centerX" id="dwS-cC-7DU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterYourNumber" destination="23a-PI-m4W" id="XCQ-YZ-SYC"/>
+                        <outlet property="isItPrime" destination="WEx-uz-ezD" id="Vlh-na-e4m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
